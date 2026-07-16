@@ -40,24 +40,18 @@ BASE_URL = "[https://ava.cenes.com.br/mod/quiz/attempt.php?attempt=949644&cmid=1
 ## 3. Executando o Script
 Com as dependências instaladas e as configurações feitas, basta rodar o script no terminal:
 
-Bash
+```bash
 python scraper.py
+```
 O script irá varrer as páginas configuradas (por padrão, de 0 a 9), exibindo o progresso no terminal e imprimindo as questões formatadas ao final.
 
 ## 🛠️ Tecnologias Utilizadas
-Python - Linguagem base.
-
-Requests - Para realizar as requisições HTTP simulando o navegador.
-
-BeautifulSoup4 - Para realizar o parsing e a extração dos dados do HTML do Moodle.
+* Python - Linguagem base.
+* Requests - Para realizar as requisições HTTP simulando o navegador.
+* BeautifulSoup4 - Para realizar o parsing e a extração dos dados do HTML do Moodle.
 
 ## ⚠️ Aviso Legal (Disclaimer)
 Este projeto foi desenvolvido estritamente para fins de estudo acadêmico, facilitação de revisões pessoais e automação de rotinas de estudo. Use-o com responsabilidade e respeito aos termos de uso da sua instituição de ensino.
 
-Desenvolvido por Alexander Barros ☕
-
-
-```bash
-pip install requests beautifulsoup4
-
+**Desenvolvido por:** Alexander Barros ☕
 
