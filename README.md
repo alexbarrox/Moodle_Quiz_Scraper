@@ -18,31 +18,25 @@ pip install requests beautifulsoup4
 ## ⚙️ Como Configurar e Executar
 Como as tentativas de questionários ficam atrás de uma área logada, o script precisa simular a sua sessão ativa para conseguir ler as páginas.
 
-1. Capturando o seu Cookie de Sessão (MoodleSession)
-Abra o navegador, faça login no seu AVA e acesse a página do questionário.
-
-Pressione F12 (ou clique com o botão direito e selecione Inspecionar) para abrir as Ferramentas de Desenvolvedor.
-
-Vá até a aba Rede (Network).
-
-Atualize a página (F5).
-
-Clique na primeira requisição que aparecer na lista (geralmente com o nome attempt.php?...).
-
-No painel de detalhes à direita, clique na aba Cabeçalhos (Headers) e procure pela seção Cabeçalhos de Requisição (Request Headers).
-
-Copie o valor inteiro do campo Cookie (você precisará especificamente do parâmetro MoodleSession=XXXXXXXX...).
+**Capturando o seu Cookie de Sessão (MoodleSession)**
+1. Abra o navegador, faça login no seu AVA e acesse a página do questionário.
+2. Pressione F12 (ou clique com o botão direito e selecione Inspecionar) para abrir as Ferramentas de Desenvolvedor.
+3. Vá até a aba Rede (Network).
+4. Atualize a página (F5).
+5. Clique na primeira requisição que aparecer na lista (geralmente com o nome attempt.php?...).
+6. No painel de detalhes à direita, clique na aba Cabeçalhos (Headers) e procure pela seção Cabeçalhos de Requisição (Request Headers).
+7. Copie o valor inteiro do campo Cookie (você precisará especificamente do parâmetro MoodleSession=XXXXXXXX...).
 
 ## 2. Configurando o Código
 Abra o arquivo do script e altere as variáveis de configuração no topo do arquivo:
-
+´´´bash
 Python
 # Cole o cookie completo extraído do seu navegador
 COOKIE_SESSAO = "MoodleSession=COLE_AQUI_O_SEU_COOKIE_DE_SESSAO"
 
 # Ajuste a URL base mantendo a estrutura até o parâmetro "&page="
 BASE_URL = "[https://ava.cenes.com.br/mod/quiz/attempt.php?attempt=949644&cmid=13945&page=](https://ava.cenes.com.br/mod/quiz/attempt.php?attempt=949644&cmid=13945&page=)"
-
+´´´
 ## 3. Executando o Script
 Com as dependências instaladas e as configurações feitas, basta rodar o script no terminal:
 
