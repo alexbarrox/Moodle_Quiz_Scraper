@@ -13,9 +13,6 @@ Ele percorre as páginas de uma tentativa de simulado/prova de forma sequencial,
 
 Antes de rodar o projeto, você precisará ter o Python 3 instalado em sua máquina e as seguintes bibliotecas:
 
-```bash
-pip install requests beautifulsoup4
-
 ## ⚙️ Como Configurar e Executar
 Como as tentativas de questionários ficam atrás de uma área logada, o script precisa simular a sua sessão ativa para conseguir ler as páginas.
 
@@ -62,3 +59,9 @@ BeautifulSoup4 - Para realizar o parsing e a extração dos dados do HTML do Moo
 Este projeto foi desenvolvido estritamente para fins de estudo acadêmico, facilitação de revisões pessoais e automação de rotinas de estudo. Use-o com responsabilidade e respeito aos termos de uso da sua instituição de ensino.
 
 Desenvolvido por Alexander Barros ☕
+
+
+```bash
+pip install requests beautifulsoup4
+
+
