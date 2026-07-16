@@ -29,14 +29,14 @@ Como as tentativas de questionários ficam atrás de uma área logada, o script 
 
 ## 2. Configurando o Código
 Abra o arquivo do script e altere as variáveis de configuração no topo do arquivo:
-´´´bash
+```bash
 Python
 # Cole o cookie completo extraído do seu navegador
 COOKIE_SESSAO = "MoodleSession=COLE_AQUI_O_SEU_COOKIE_DE_SESSAO"
 
 # Ajuste a URL base mantendo a estrutura até o parâmetro "&page="
 BASE_URL = "[https://ava.cenes.com.br/mod/quiz/attempt.php?attempt=949644&cmid=13945&page=](https://ava.cenes.com.br/mod/quiz/attempt.php?attempt=949644&cmid=13945&page=)"
-´´´
+```
 ## 3. Executando o Script
 Com as dependências instaladas e as configurações feitas, basta rodar o script no terminal:
 
