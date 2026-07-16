@@ -14,7 +14,7 @@ Ele percorre as páginas de uma tentativa de simulado/prova de forma sequencial,
 Antes de rodar o projeto, você precisará ter o Python 3 instalado em sua máquina e as seguintes bibliotecas:
 ```bash
 pip install requests beautifulsoup4
-
+```
 ## ⚙️ Como Configurar e Executar
 Como as tentativas de questionários ficam atrás de uma área logada, o script precisa simular a sua sessão ativa para conseguir ler as páginas.
 
